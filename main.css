@@ -1,0 +1,552 @@
+*{
+  font-family: 'Hind', sans-serif;
+  color: #002b39;
+  margin:0;
+}
+
+h1{
+  margin: 10px;
+  font-size: 42px;
+  text-align: center;
+  display: block;
+  margin-block-start: 16px;
+  margin-block-end: 16px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  overflow-wrap: break-word;
+}
+
+main{
+  background-image:url(https://comunidad.venntors.com/wp-content/uploads/2021/12/Grupo-9213@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y:center;
+  padding-bottom: 120px;
+}
+
+.inicio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.inicio>strong{
+  color: #1489ff; 
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.inicio>p{
+  margin: 0px;
+}
+
+/* Botton */
+.crearCuenta{
+  background: linear-gradient(0deg,#007fff 0%,#00b1ff 100%);
+  min-width: 255px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight:500;
+  height: 55px;
+  border-radius: 5px;
+  border-color: transparent;
+  border-width: 0px;
+  box-shadow: 0px 15px 12px 0px rgb(153 176 190 / 35%);
+  margin-bottom: 40px;
+}
+
+.crearCuenta:hover{
+  height: 50px;
+  background-color: white;
+  color:#2ea3f2;
+  border-color: #2ea3f2;
+  border: 1px solid;
+}
+/* Carrucel */
+.card {
+  display: grid;
+  max-width: 632px;
+  height: 183px;
+  grid-template-columns: 1fr auto;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  box-shadow: 0 15px 15px 0 rgb(26 72 100 / 15%);
+  background-color: rgb(251, 251, 251);
+  padding: 40px 29px;
+}
+.cards{
+  display: grid;
+  justify-content: center;
+}
+
+.card .card-photo{
+  display: grid;
+  align-content: center;
+  height: 183px;
+}
+
+.card .card-right{
+    display: grid;
+    align-content: center;
+    max-width: 417px;
+    height: 183px;
+    grid-template-areas: 
+    "name name"
+    "profession ranking"
+    "descrip descrip";
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+}
+
+.card .card-right .profession{
+  display: grid;
+  grid-area: profession;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 180px;
+}
+
+.card .card-right .ranking{
+  grid-area: ranking;
+}
+
+.card-right .name{
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    border: none;
+    grid-area: name;    
+}
+
+.card-right .description{
+  grid-area: descrip;
+}
+/* Herramientas para crear tu curso online */
+.cards-tools{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 24% 24% 24%;
+  gap: 30px;
+  padding: 30px;
+}
+
+.tools .cards-tools .card-tool{
+  display: grid;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 28.6px 28.6px;
+  box-shadow: 0 10px 30px 0 rgb(195 213 224 / 50%);
+  background-color: #fff;
+}
+
+.tools .cards-tools .card-tool img{
+  max-width: 287px;
+}
+.tools .cards-tools .card-tool .sessions{
+  font-size: 27px;
+  margin: 0;
+  font-weight: 550;
+  color: #002b39;
+}
+
+.tools .cards-tools .card-tool .sessions-description{
+  font-size: 18px;
+  color: #002b39;
+  margin: 0;
+}
+
+/* 
+imagen 1 azul: https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7023.svg
+imagen 2 azul: https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7025.svg
+imagen 3 azul: https://comunidad.venntors.com/wp-content/uploads//2021/12/Grupo-7024-1.svg
+*/
+
+/* Es un proceso muy simple */
+.tools .easy-process{
+  display: grid;
+  grid-template-columns: 22% 22% 22%;
+  justify-items: center;
+  justify-content: center;
+  background: linear-gradient(to right,#1489ff, #10ebd9);
+  background-repeat: no-repeat;
+  background-size: 550px 5px;
+  background-position: 50% 42%;
+
+}
+.tools .easy-process .img-process .number{
+  display: grid;
+  height: 25px;
+  width: auto;
+  margin-top: 10px;
+}
+
+.tools .easy-process .img-process img{
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.tools .easy-process .img-process {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  background-position: 50%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
+.tools .easy-process .img-process .img-circle{
+  background-color: #10ebd9;
+}
+
+.tools .easy-process .img-process .img-circle:hover{
+  background: url(https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7023.svg);
+  background-size: contain;
+  display: block;
+} 
+
+.tools .easy-process .img-process > p{
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.platform{
+  background-image: url(https://venn-ws-bucket.s3.us-west-2.amazonaws.com/wp-content/uploads/2021/09/14122056/Enmascarar-grupo-285%403x-scaled.webp);
+  background-position: top center;
+  margin-top: 80px;
+  padding-top: 13px;
+  padding-bottom: 100px;
+}
+
+.platform > h1{
+  margin-top: 180px; 
+  margin-bottom: 30px;
+}
+
+.platform .services{
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  column-gap: 30px;
+  margin-bottom: 100px;
+  
+}
+
+.platform .services .card-services{
+    background-color: #1489ff;
+    display: grid;
+    justify-items: center;
+    width: 90%;
+    color: #002b39; 
+    margin: 15px 6%;
+    padding: 22px 5%;
+    border-radius: 10px;
+    box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%);
+    border: solid 1px #c3d5e0;
+    background-image: linear-gradient(to bottom, #fff, #fff 78%, #f0feff);
+}
+footer{
+  background-color: #1489ff;
+  padding: 40px 140px;
+}
+.social-media{
+  display: grid;
+  grid-template-columns: 80% 20%;
+  align-items: center;
+
+}
+
+.social-media .social-networks{
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 5px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.politics{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: end;
+  column-gap: 100px;
+  padding-top: 30px;
+}
+
+.politics > a{
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 981px){
+
+  *{
+    text-align: center;
+  }
+
+  .inicio{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+  }
+  
+  h1{
+    font-size: 31px;
+  }
+
+  .cards-tools{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+  }
+  
+  .tools .cards-tools .card-tool{
+    width: 300px;
+    height: 360px; 
+  }
+  
+  .tools .cards-tools .card-tool img{
+    max-width: 300px;
+  }
+  .tools .cards-tools .card-tool .sessions{
+    font-size: 20px;
+  }
+  
+  .tools .cards-tools .card-tool .sessions-description{
+    font-size: 14px;
+  }
+
+/* Es un proceso muy simple */
+.tools .easy-process{
+  grid-template-columns: auto;
+  row-gap: 20px;
+  background-position: 50% 120%; 
+  margin-bottom: 60px;
+}
+
+.tools .easy-process .img-process{
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%);
+  height: 200px;
+  width: 200px;
+  border: solid 1px #aab8c1;
+}
+
+.tools .easy-process .img-process .img-circle{
+max-width: 100px;
+height: auto;
+margin: 0px;
+} 
+
+.tools .easy-process .img-process .number{
+  margin:0px
+}
+
+.tools .easy-process .img-process > p{
+  margin: 0px;
+  font-size: 18px;
+}
+
+  .platform .services{
+    grid-template-columns: 25% 25% 25%;
+  }
+
+ .social-media{
+
+    justify-content: space-around;
+    grid-template-columns: auto auto;
+
+  }
+
+}
+
+@media (max-width: 479px){
+  *{
+/*     background-color: #fff; */
+    text-align: center;
+  }
+
+  .inicio{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+  }
+
+  main, .platform{
+    background-image: none;
+  }
+  
+  h1{
+    font-size: 30px;
+    margin: 0px;
+  }
+
+  p{
+    font-size: 16px;
+  }
+  main{
+    background-image:url(https://comunidad.venntors.com/wp-content/uploads/2021/12/Grupo-9213@2x.png);
+  }
+  .card {
+    width: 270px;
+    height: 320px; 
+    grid-template-columns: auto;
+    margin: 100px 5px;
+    padding: 40px 15px;
+    background-color: #fff;
+    position: relative;
+    border: solid 1px #c3d5e0;
+  }
+  .card .card-photo img{
+    position: absolute;
+    left: 34px;
+    top:-145px;
+    width: 225px;
+    background-color: transparent;
+  }
+
+  .card .card-right{
+    grid-template-areas: 
+    "ranking"
+    "description"
+    "name"
+    "profession";
+    width: 270px;
+    justify-items: center;
+    margin-top: 60px;
+}
+
+.card .card-right .profession {
+  margin-top: 20px;
+  display: grid;
+  justify-content: center;
+  grid-column: auto;
+  grid-area: profession;
+  margin-right: 0px;
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+.card-right .name{
+  max-width: auto;
+  grid-area: name;
+  font-size: 18px;
+  display: grid;
+  justify-content: center
+}
+
+.card .card-photo{
+  height: auto;
+}
+.card .ranking{
+  grid-area: ranking;
+  margin-left: 0px;
+}
+
+.card .description{
+  grid-area: description;
+  font-size: 16px;
+  text-align: initial;
+  margin-bottom: 10px;
+}
+
+/* Herramientas para crear tu curso online */
+.cards-tools{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+}
+
+.tools .cards-tools .card-tool{
+  width: 200px;
+  height: 300px; 
+}
+
+.tools .cards-tools .card-tool img{
+  max-width: 220px;
+}
+.tools .cards-tools .card-tool .sessions{
+  font-size: 18px;
+}
+
+.tools .cards-tools .card-tool .sessions-description{
+  font-size: 14px;
+}
+
+/* Es un proceso muy simple */
+.tools .easy-process{
+  grid-template-columns: auto;
+  row-gap: 20px;
+  background-position: 50% 120%; 
+  margin-bottom: 60px;
+}
+
+.tools .easy-process .img-process{
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 20px 15px 0 rgb(26 72 100 / 10%);
+  height: 200px;
+  width: 200px;
+  border: solid 1px #aab8c1;
+  margin-top: 20px;
+}
+
+.tools .easy-process .img-process .img-circle{
+max-width: 100px;
+height: auto;
+} 
+
+.tools .easy-process .img-process > p{
+  margin: 0px;
+  font-size: 18px;
+}
+
+/* Somos una plataforma que lo tiene todo Media*/
+
+.platform{
+  background: linear-gradient(to right,#1489ff, #10ebd9, #1489ff);
+  background-repeat: no-repeat;
+  background-size: 480px 10px;
+  background-position: 50% 0%;
+}
+.platform > h1{
+  margin-top: 60px;
+}
+.platform .services{
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  column-gap: 15px;
+  
+}
+footer{
+  padding: 40px 60px;
+}
+.social-media{
+  grid-template-columns: auto;
+  align-items: center;
+}
+
+.social-media .social-networks{
+  margin: 0px;
+  margin-top: 50px;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.politics{
+  grid-template-columns: auto;
+  justify-content: center;
+  column-gap: 100px;
+  row-gap: 10px;
+  padding-top: 30px;
+  font-size: 14px;
+}
+
+}
