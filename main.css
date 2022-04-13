@@ -198,16 +198,6 @@ imagen 3 azul: https://comunidad.venntors.com/wp-content/uploads//2021/12/Grupo-
   justify-items: center;
 }
 
-.tools .easy-process .img-process .img-circle{
-  background-color: #10ebd9;
-}
-
-.tools .easy-process .img-process .img-circle:hover{
-  background: url(https://comunidad.venntors.com/wp-content/uploads//2021/12/nuevo7023.svg);
-  background-size: contain;
-  display: block;
-} 
-
 .tools .easy-process .img-process > p{
   margin-top: 0;
   margin-bottom: 50px;
